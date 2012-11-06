@@ -1,0 +1,201 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {font-family: "Helvetica Neue", Arial, sans-serif;}
+a:link, a:visited {color: #000;  text-decoration: none; padding: 3px;background: #FFC;}
+a:hover {color: #000; text-decoration: none;background: yellow;}
+a:active {background: yellow;}
+html, body {
+    height: 100%;
+}
+#content {
+    width: 410px;
+    background: #fff;
+    padding: 40px;
+    border-right: 1px solid #d5d5d5;
+    height: 100%;
+    background: #f8f8f8;
+    position: fixed;
+}
+#content h1 {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+#content p {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 13px;
+    color: #656565;
+}
+#content p.quote {
+    font-size: 11px;
+    margin: 0 20px 13px 20px;
+    line-height: 14px;
+}
+#content p.heading {
+    font-size: 14px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+#content .note {
+    margin-top: 50px;
+    border-top: 1px dotted #b3b3b3;
+    padding-top: 15px;
+}
+.note_two {
+    margin-top: 20px;
+    font-size: 10;
+    opacity: .6;
+}
+#content .list {
+    margin: 10px;
+}
+#dropbox {
+    width: 100%;
+    padding: 50px 0;
+    border: 1px dotted #b3b3b3;
+    background: #fff;
+    text-align: center;
+    font-size: 12px;
+    color: #656565;
+    border-radius: 2px;
+}
+#dropbox.dropbox-over {
+    background: #0066CC;
+}
+#output, #duplicates {
+    margin: 0 40px;
+    font-family: Inconsolata, "Helvetica Neue", Arial;
+    word-wrap: break-word;
+    font-size: 13px;
+}
+pre span {
+    font-family: Inconsolata, "Helvetica Neue", Arial;
+}
+#problems {
+    margin: 0 40px;
+    font-family: "Helvetica Neue", Arial;
+    word-wrap: break-word;
+    font-size: 13px;
+}
+#content_jass {
+    display: none;
+    width: 720px;
+    position: absolute;
+    left: 490px;
+    top: 0;
+}
+#content_jass h3 {
+    font-family: "Helvetica Neue", Arial;
+    font-size: 13px;
+    margin: 40px 0 10px 20px;
+}
+#content_jass {
+	margin: 25px;
+}
+#stats {
+    position: fixed;
+    background: #fff;
+    padding: 10px;
+}
+#dup_header {
+    margin-top: 80px !important;
+}
+.pill {
+    display: inline-block;
+    margin: 5px;
+    padding: 6px 8px;
+    border-radius: 2px;
+    color: white;
+    background-color: #4890d8;
+    font-family: "Helvetica Neue", Arial;
+    word-wrap: break-word;
+    font-size: 13px;
+}
+.pill.warning {
+    background: #b70a0a;
+}
+.dup {
+    display: inline-block;
+    margin: 5px;
+    padding: 4px 6px;
+    border-radius: 2px;
+    color: white;
+    background-color: #db4040;
+    font-family: "Helvetica Neue", Arial;
+    word-wrap: break-word;
+    font-size: 11px;
+}
+.dup:hover {
+		background: #760e0e;
+		cursor: pointer;
+}
+.dup.done {
+    background: #a5d63c;
+}
+#loader {
+	position: fixed;
+	bottom: 0;
+	background: rgba(0,0,0,.7);
+	font-family: "Helvetica Neue", Arial;
+	color: #fff;
+	font-size: 11px;
+	padding: 6px 10px;
+}
+li {
+    padding: 10px 0;
+    border-bottom: 1px dotted #b3b3b3;
+}
+#bad_upload {
+    position: absolute;
+    top: 40px;
+    left: 560px;
+    display: none;
+}

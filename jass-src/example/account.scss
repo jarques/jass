@@ -1,0 +1,166 @@
+@import "globals";
+/* account.css */
+#settings {
+    h2 {
+        padding: 40px;
+
+        img {
+            width: 45px;
+            height: 45px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+    }
+    #settings_content {
+        padding: 40px;
+
+        .tab_content {
+            width: 508px;
+            float: left;
+            margin-left: 40px;
+
+            .float_field {
+                float: left;
+                margin-right: 80px;
+            }
+            .txt {
+                display: block;
+                margin-bottom: 20px;
+                @include text-input(200px);
+            }
+            textarea.txt {
+                margin-bottom: 5px;
+            }
+            .name_email_password {
+                padding-bottom: 30px;
+                margin-bottom: 40px;
+                border-bottom: 1px solid #EBEBEB;
+            }
+            #change_url {
+                @include text-input(494px);
+
+                input {
+                    width: 390px;
+                    border: 0;
+                    outline: none;
+                    font-size: 12px;
+                    color: #31383e;
+                    font-family: $base-font;
+                    margin-left: -1px;
+                    position: absolute;
+                    background: none;
+                    margin-top: -1px;
+                }
+                span {
+                    color: #7e868d;
+                    position: relative;
+                    z-index: 100;
+                }
+            }
+            #page_name {
+                width: 494px;
+            }
+            .btn-142-24 {
+                float: right;
+                margin-top: 22px;
+            }
+            .settings_container {
+                p {
+                    margin: 2px 0 2px 10px;
+                    padding: 2px;
+
+                    &:hover {
+                        background: #f6f7f8;
+                    }
+                }
+                label {
+                    margin: 20px 0 10px 0;
+                    display: block;
+                }
+            }
+            .social_settings_container p {
+                font-size: 10px;
+            }
+            .connected_account {
+                border: 1px solid #c6cfd6;
+                padding: 6px;
+                margin-bottom: 10px;
+                position: relative;
+                @include rounded-corners(2px);
+                @include gradient-background(#fff, #fbfbfb, #f8f8f8);
+                @include inset-shadow(0px -2px 0px, #e8e8e8);
+
+                p {
+                    color: #3b454d;
+                    font-size: 11px;
+                }
+                img {
+                    float: left;
+                    margin-right: 5px;
+                }
+                .connect {
+                    position: absolute;
+                    border: 1px solid #b8d2ec;
+                    right: -1px;
+                    top: -1px;
+                    padding: 8px;
+                    color: #8794b2;
+                    width: 62px;
+                    text-align: center;
+                    @include gradient-background(#fbfbfb, #f6f9fc, #f8f8f8);
+                    @include inset-shadow(0px -2px 0px, #d8e5f1);
+                }
+                .disconnect {
+                    position: absolute;
+                    border: 1px solid #e2bcbf;
+                    right: -1px;
+                    top: -1px;
+                    padding: 8px;
+                    color: #bd9f9f;
+                    width: 62px;
+                    text-align: center;
+                    display: block;
+                    @include gradient-background(#fcf7f7, #faf2f2, #f8eeee);
+                    @include inset-shadow(0px -2px 0px, #f1dcdc);
+                }
+            }
+            #deletion_feedback {
+                width: 494px;
+                height: 40px;
+            }
+            #deletion_warning {
+                color: #cc0000;
+            }
+        }
+    }
+}
+#tabs {
+    width: 176px;
+    float: left;
+
+    .tab {
+        padding: 8px 10px;
+        border-bottom: 1px solid #ebebeb;
+        width: 170px;
+
+        p {
+            color: #323131;
+            font-weight: 500;
+        }
+        span {
+            color: #b2b1b1;
+            font-size: 10px;
+        }
+        &:hover {
+            cursor: pointer;
+            background: #f6f7f8;
+        }
+        &.on {
+            background: url(/images/settings-tab.png) no-repeat;
+            border-bottom: none;
+            width: 190px;
+            margin-top: -1px;
+            padding: 9px 10px;
+        }
+    }
+}

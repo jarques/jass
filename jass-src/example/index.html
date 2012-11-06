@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title></title>
+	<style>
+	body {
+		margin: 0;
+	}
+		#output, #duplicates {
+		    margin: 0 40px;
+		    font-family: Inconsolata, "Helvetica Neue", Arial;
+		    word-wrap: break-word;
+		    font-size: 13px;
+		}
+		h1 {
+				font-family: "Helvetica Neue", Arial;
+				font-size: 24px;
+				padding: 25px;
+				background: #f9f9f9;
+				border-bottom: 1px solid #e2e2e2;
+				margin: 0;
+		}
+		h3 {
+		    font-family: "Helvetica Neue", Arial;
+		    font-size: 13px;
+		    margin: 40px 0 10px 20px;
+		}
+		#content {
+			margin: 50px;
+		}
+		.pill {
+		    display: inline-block;
+		    margin: 5px;
+		    padding: 6px 8px;
+		    border-radius: 2px;
+		    color: white;
+		    background-color: #4890d8;
+		    font-family: "Helvetica Neue", Arial;
+		    word-wrap: break-word;
+		    font-size: 13px;
+		}
+		.dup {
+		    display: inline-block;
+		    margin: 5px;
+		    padding: 4px 6px;
+		    border-radius: 2px;
+		    color: white;
+		    background-color: #db4040;
+		    font-family: "Helvetica Neue", Arial;
+		    word-wrap: break-word;
+		    font-size: 11px;
+		}
+		.dup:hover {
+				background: #760e0e;
+				cursor: pointer;
+		}
+		#loader {
+			position: fixed;
+			bottom: 0;
+			background: rgba(0,0,0,.7);
+			font-family: "Helvetica Neue", Arial;
+			color: #fff;
+			font-size: 11px;
+			padding: 6px 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>JASS</h1>
+
+	<div id="loader">Loading..</div>
+
+	<div id="content">
+		<div id="stats"></div>
+
+		<h3>Duplicates:</h3>
+		<div id="duplicates"></div>
+
+		<h3>CSS Output:</h3>
+		<xmp id="output"></xmp>
+	</div>
+
+	<script src="../lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../lib/jass.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			jass.read('test.css');
+		});
+	</script>
+
+</body>
+</html>

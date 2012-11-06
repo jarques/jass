@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>jass</title>
+	<meta name="author" content="Jarques Pretorius">
+  	<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="styles/vs.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  	<script src="http://www.google.com/jsapi?key=ABQIAAAADYbHHQrNWPElNtE4hn2g1hQhn5tTlmnhbGVHENfXgw8ik0kvARSWpfuAdtdt1KqinQpUokxB7SpcsQ" type="text/javascript"></script>
+  	<script type="text/javascript">
+  		google.load("jquery", "1");
+  		google.load("jqueryui", "1");
+  	</script>
+</head>
+
+<body id="body-box">
+
+  <div id="bad_upload"><img src="img/bad-upload.jpg"/></div>
+
+<div id="content">
+    <h1>jass</h1>
+    <p>Simple CSS diagnostics tool</p>
+
+    <p class="heading">What is jass?</p>
+    <p>jass is a simple javascript based CSS diagnostics tool. It tells you how many CSS rules you have, duplicates and how well IE6-8 will handle the file with their limitations.</p>
+
+   <p class="heading">Using jass</p>
+	 <p>Just drag &amp; drop your CSS file into the box below.</p>
+	 <div id="dropbox"><span id="droplabel">Drop file here...</span>
+		  <div id="progressbar"></div>
+	 </div>
+
+    <div class="note">
+      <p>Made by <a href="http://twitter.com/jarques">@jarques</a></p>
+    </div>
+
+	<div class="note_two">
+		<p>Note: jass is not a minifier or optimizer. It only shows diagnostics, duplicates, size.</p>
+	</div>
+  </div>
+
+	<div id="content_jass">
+		<div id="stats"></div>
+
+    <div class="problems">
+      <h3 id="dup_header">Possible Problems:</h3>
+      <div id="problems"><ul></ul></div>
+    </div>
+		<h3 id="dup_header">Duplicates:</h3>
+		<div id="duplicates"></div>
+
+		<h3>CSS Output:</h3>
+		<pre><code id="output" class="css"></code></pre>
+	</div>
+
+	<script type="text/javascript" src="js/highlight.pack.js"></script>
+	<script src="js/jass.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/dndimg.js"></script>
+
+</body>
+</html>
