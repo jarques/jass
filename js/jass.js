@@ -40,7 +40,6 @@ var jass = {
     },
 
     // Display Stuff
-
     show_duplicates: function(data) {
         delete data[0];
         html = new Array();
